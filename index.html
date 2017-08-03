@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Responsive Grid by Khoata</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="feature-grid">
+			<div class="feature-grid__item box" data-colspan="2" data-rowspan="1" style="background-image: url('https://burst.shopifycdn.com/photos/market-bakery_925x@2x.jpg');">
+
+				<div class="box-content">
+					<a href="/collections/all">
+						<span style="color: #6f7631;">Shop Online</span>
+					</a>
+				</div>
+			</div>
+			<div class="feature-grid__item box" data-colspan="1" data-rowspan="1" style="background-image: url('https://burst.shopifycdn.com/photos/market-bakery_925x@2x.jpg');">
+				<div class="box-content">
+					<a href="/collections/all">
+						<span style="color: #6f7631;">Shop Online</span>
+					</a>
+				</div>
+			</div>
+			<div class="feature-grid__item box" data-colspan="1" data-rowspan="2" style="background-image: url('https://burst.shopifycdn.com/photos/market-bakery_925x@2x.jpg');">
+				<div class="box-content">
+					<a href="/collections/all">
+						<span style="color: #6f7631;">Shop Online</span>
+					</a>
+				</div>
+			</div>
+			<div class="feature-grid__item box" data-colspan="1" data-rowspan="1" style="background-image: url('https://burst.shopifycdn.com/photos/market-bakery_925x@2x.jpg');">
+				<div class="box-content">
+					<a href="/collections/all">
+						<span style="color: #6f7631;">Shop Online</span>
+					</a>
+				</div>
+			</div>
+			<div class="feature-grid__item box" data-colspan="1" data-rowspan="1" style="background-image: url('https://burst.shopifycdn.com/photos/market-bakery_925x@2x.jpg');">
+				<div class="box-content">
+					<a href="/collections/all">
+						<span style="color: #6f7631;">Shop Online</span>
+					</a>
+				</div>
+			</div>
+			<div class="feature-grid__item box" data-colspan="1" data-rowspan="1" style="background-image: url('https://burst.shopifycdn.com/photos/market-bakery_925x@2x.jpg');">
+				<div class="box-content">
+					<a href="/collections/all">
+						<span style="color: #6f7631;">Shop Online</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="jquery.feature-grid.js"></script>
+		<script type="text/javascript">
+			$('.feature-grid').responsivegrid({
+				'breakpoints': {
+					'desktop' : {
+						'range' : '1200-',
+						'options' : {
+							'column' : 4,
+						}
+					},
+					'tablet-landscape' : {
+						'range' : '1000-1200',
+						'options' : {
+							'column' : 4,
+						}
+					},
+					'tablet-portrate' : {
+						'range' : '767-1000',
+						'options' : {
+							'column' : 2,
+						}
+					},
+					'mobile' : {
+						'range' : '-767',
+						'options' : {
+							'column' : 1,
+						}
+					},
+				}
+			});
+		</script>
+
+	</body>
+
+</html>
